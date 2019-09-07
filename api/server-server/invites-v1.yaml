@@ -112,16 +112,16 @@ paths:
             minItems: 2
             maxItems: 2
             items:
-              - type: integer
-                description: The value ``200``.
-                example: 200
-              - type: object
-                description: An object containing the signed invite event.
-                title: Event Container
-                properties:
-                  event:
-                    $ref: "definitions/invite_event.yaml"
-                required: ['event']
+              type: object
+              #  description: The value ``200``.
+              #  example: 200
+              #- type: object
+              #  description: An object containing the signed invite event.
+              #  title: Event Container
+              #  properties:
+              #    event:
+              #      $ref: "definitions/invite_event.yaml"
+              #  required: ['event']
           examples:
             application/json: [
               200,

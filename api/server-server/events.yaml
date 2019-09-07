@@ -23,7 +23,8 @@ basePath: /_matrix/federation/v1
 produces:
   - application/json
 securityDefinitions:
-  $ref: definitions/security.yaml
+  signedRequest:
+    $ref: definitions/security.yaml
 paths:
   "/state/{roomId}":
     get:

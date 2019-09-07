@@ -24,7 +24,8 @@ basePath: /_matrix/app/v1
 produces:
   - application/json
 securityDefinitions:
-  $ref: definitions/security.yaml
+  homeserverAcessToken:
+    $ref: definitions/security.yaml
 paths:
   "/transactions/{txnId}":
     put:

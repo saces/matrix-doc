@@ -25,7 +25,8 @@ consumes:
 produces:
   - application/json
 securityDefinitions:
-  $ref: definitions/security.yaml
+  accessToken:
+    $ref: definitions/security.yaml
 paths:
   "/rooms/{roomId}/typing/{userId}":
     put:

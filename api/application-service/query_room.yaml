@@ -26,7 +26,8 @@ consumes:
 produces:
   - application/json
 securityDefinitions:
-  $ref: definitions/security.yaml
+  homeserverAcessToken:
+    $ref: definitions/security.yaml
 paths:
   "/rooms/{roomAlias}":
     get:

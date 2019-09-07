@@ -172,7 +172,7 @@ paths:
                     The `PDUs <#pdus>`_ contained in the auth chain. The event format
                     varies depending on the room version - check the `room version specification`_
                     for precise event formats.
-                  properties: []
+                  properties: {}
                   example:
                     $ref: "examples/minimal_pdu.json"
               missing:

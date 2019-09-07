@@ -60,10 +60,10 @@ paths:
                   by the `key algorithm <#key-algorithms>`_.
 
                   May be absent if no new one-time keys are required.
-                additionalProperties:
-                  type:
-                    - string
-                    - object
+                additionalProperties: true
+                  #type:
+                    #- string
+                    #- object
                     # XXX: We can't define an actual object here, so we have to hope
                     # that people will look at the swagger source or can figure it out
                     # from the other endpoints/example.
@@ -304,10 +304,10 @@ paths:
                   on the Key Object format.
                 additionalProperties:
                   type: object
-                  additionalProperties:
-                    type:
-                      - string
-                      - object
+                  additionalProperties: true
+                    #type:
+                      #- string
+                      #- object
                       # XXX: We can't define an actual object here, so we have to hope
                       # that people will look at the swagger source or can figure it out
                       # from the other endpoints/example.

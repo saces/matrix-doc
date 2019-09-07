@@ -236,12 +236,12 @@ paths:
             type: array
             minItems: 2
             maxItems: 2
-            items:
-              - type: integer
-                description: The value ``200``.
-                example: 200
-              - type: object
-                title: Empty Object
-                description: An empty object.
+            items: {}
+            #  - type: integer
+            #    description: The value ``200``.
+            #    example: 200
+            #  - type: object
+            #    title: Empty Object
+            #    description: An empty object.
           examples:
             application/json: [200, {}]

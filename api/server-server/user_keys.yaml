@@ -77,22 +77,22 @@ paths:
                   the Key Object format.
                 additionalProperties:
                   type: object
-                  additionalProperties:
-                    type:
-                      - string
-                      - type: object
-                        title: KeyObject
-                        properties:
-                          key:
-                            type: string
-                            description: The key, encoded using unpadded base64.
-                          signatures:
-                            type: object
-                            description: |-
-                              Signature for the device. Mapped from user ID to signature object.
-                            additionalProperties:
-                              type: string
-                        required: ['key', 'signatures']
+                  additionalProperties: true
+                  #  type:
+                  #    - string
+                  #    - type: object
+                  #      title: KeyObject
+                  #      properties:
+                  #        key:
+                  #          type: string
+                  #          description: The key, encoded using unpadded base64.
+                  #        signatures:
+                  #          type: object
+                  #          description: |-
+                  #            Signature for the device. Mapped from user ID to signature object.
+                  #          additionalProperties:
+                  #            type: string
+                  #      required: ['key', 'signatures']
                 example: {
                   "@alice:example.com": {
                     "JLAFKJWSCS": {

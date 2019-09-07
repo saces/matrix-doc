@@ -62,7 +62,6 @@ paths:
           x-example: "$abc123:example.org"
         - in: body
           name: body
-          type: object
           required: true
           schema:
             allOf:
@@ -86,7 +85,7 @@ paths:
                           $ref: "../../event-schemas/schema/stripped_state.yaml"
                         example:
                           $ref: "../../event-schemas/examples/invite_room_state.json"
-          example: {
+          x-example: {
             "$ref": "examples/minimal_pdu.json",
             "type": "m.room.member",
             "state_key": "@joe:elsewhere.com",

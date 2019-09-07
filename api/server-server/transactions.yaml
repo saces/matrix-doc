@@ -54,7 +54,6 @@ paths:
           x-example: S0meTransacti0nId
         - in: body
           name: body
-          type: object
           required: true
           schema:
             allOf:
@@ -68,7 +67,7 @@ paths:
                       messages to be sent. Must not include more than 100 EDUs.
                     items:
                       $ref: "definitions/edu.yaml"
-          example: {
+          x-example: {
             "$ref": "examples/transaction.json",
             "edus": [{"$ref": "edu.json"}] # Relative to the examples directory
           }

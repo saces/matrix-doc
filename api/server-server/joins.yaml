@@ -191,7 +191,6 @@ paths:
           x-example: "$abc123:example.org"
         - in: body
           name: body
-          type: object
           required: true
           schema:
             type: object
@@ -235,7 +234,7 @@ paths:
               - origin_server_ts
               - type
               - content
-          example: {
+          x-example: {
             "$ref": "examples/minimal_pdu.json",
             "type": "m.room.member",
             "state_key": "@someone:example.org",

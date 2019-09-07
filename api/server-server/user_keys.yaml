@@ -39,7 +39,6 @@ paths:
       parameters:
         - in: body
           name: body
-          type: object
           required: true
           schema:
             type: object
@@ -120,7 +119,6 @@ paths:
       parameters:
         - in: body
           name: body
-          type: object
           required: true
           schema:
             type: object

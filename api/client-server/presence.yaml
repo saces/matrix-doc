@@ -114,7 +114,7 @@ paths:
                   The length of time in milliseconds since an action was performed
                   by this user.
               status_msg:
-                type: [string, "null"]
+                type: string
                 description: The state message for this user if one was set.
               currently_active:
                 type: boolean

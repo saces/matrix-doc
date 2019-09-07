@@ -141,7 +141,7 @@ paths:
                   title: Rejection Reason
                   properties:
                     reason:
-                      type: enum
+                      type: string
                       enum: ['auth_error', 'replaced', 'not_ancestor']
                       description: |-
                         The reason for the event being rejected.
@@ -196,7 +196,7 @@ paths:
                   title: Rejection Reason
                   properties:
                     reason:
-                      type: enum
+                      type: string
                       enum: ['auth_error', 'replaced', 'not_ancestor']
                       description: |-
                         The reason for the event being rejected.
